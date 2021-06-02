@@ -1,6 +1,7 @@
 import { Redirect, Route, Switch } from "react-router-dom";
 import React from "react";
 import BooksContainer from './components/Container/BooksContainer'
+import DeleteContainer from "./components/Container/DeleteContainer";
 
 export default function routes() {
   return (
@@ -16,7 +17,7 @@ export default function routes() {
       </Route>
 
       <Route path="/deletar" exact>
-        <p>deletar</p>
+        <DeleteContainer/>
       </Route>
 
       <Route path="/consultar" exact>
