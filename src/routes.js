@@ -1,7 +1,8 @@
 import { Redirect, Route, Switch } from "react-router-dom";
 import React from "react";
-import BooksContainer from './components/Container/BooksContainer'
+import BooksContainer from "./components/Container/BooksContainer";
 import DeleteContainer from "./components/Container/DeleteContainer";
+import ChangeContainer from "./components/Container/ChangeContainer";
 
 export default function routes() {
   return (
@@ -13,15 +14,15 @@ export default function routes() {
       </Route>
 
       <Route path="/alterar" exact>
-        <p>alterar</p>
+        <ChangeContainer />
       </Route>
 
       <Route path="/deletar" exact>
-        <DeleteContainer/>
+        <DeleteContainer />
       </Route>
 
       <Route path="/consultar" exact>
-        <BooksContainer/>
+        <BooksContainer />
       </Route>
 
       <Route render={() => <div>Página não encontrada</div>} />
