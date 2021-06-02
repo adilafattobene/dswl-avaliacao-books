@@ -3,6 +3,7 @@ import React from "react";
 import BooksContainer from "./components/Container/BooksContainer";
 import DeleteContainer from "./components/Container/DeleteContainer";
 import ChangeContainer from "./components/Container/ChangeContainer";
+import IncludeContainer from "./components/Container/IncludeContainer";
 
 export default function routes() {
   return (
@@ -10,7 +11,7 @@ export default function routes() {
       <Redirect from="/" to="/consultar" exact />
 
       <Route path="/incluir">
-        <p>incluir</p>
+        <IncludeContainer />
       </Route>
 
       <Route path="/alterar" exact>
