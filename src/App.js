@@ -1,16 +1,20 @@
-import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import Routes from "./routes";
 import BooksProvider from "./context/BooksProvider";
+import styled from "styled-components";
 
-export default function App() {
+const App = styled.div`
+  text-align: center;
+`;
+
+export default function AppComponent() {
   return (
-    <div className="App">
+    <App>
       <BrowserRouter>
         <BooksProvider>
           <Routes />
         </BooksProvider>
       </BrowserRouter>
-    </div>
+    </App>
   );
 }
