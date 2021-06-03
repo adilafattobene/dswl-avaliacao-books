@@ -8,7 +8,7 @@ const BookCard = styled.div`
   box-shadow: 0 2px 3px #ccc;
   padding: 16px;
   text-align: center;
-  background-color: beige;
+  background-color: #add8e6;
 `;
 
 export default function BookCardComponent(props) {
