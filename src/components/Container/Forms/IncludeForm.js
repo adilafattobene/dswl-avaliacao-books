@@ -35,7 +35,7 @@ export default function IncludeForm() {
         minlength="3"
         maxlength="100"
       />
-      <input type="text" id="pages" placeholder="Digite o número de páginas" />
+      <input type="number" id="pages" placeholder="Digite o número de páginas" />
       <input type="submit" value="Cadastrar" />
     </form>
   );

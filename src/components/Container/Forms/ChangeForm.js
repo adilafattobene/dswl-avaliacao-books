@@ -69,7 +69,7 @@ export default function DeleteForm() {
           <br />
           <label for="name">Páginas: </label>
           <input
-            type="text"
+            type="number"
             id="pages"
             name="pages"
             defaultValue={book.pages}
