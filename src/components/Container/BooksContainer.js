@@ -16,9 +16,7 @@ export default function BooksContainer() {
               name={book.name}
               author={book.author}
               pages={book.pages}
-            >
-              component_description
-            </BookCardComponent>
+            />
           </div>
         );
       })}
