@@ -1,5 +1,12 @@
 import React from "react";
+import IncludeForm from "../Book/IncludeForm";
 
 export default function IncludeContainer() {
-    return <p>incluir</p>;
+  return (
+    <>
+      <br />
+      <br />
+      <IncludeForm />
+    </>
+  );
 }
