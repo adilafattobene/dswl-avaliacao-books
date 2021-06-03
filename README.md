@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# AVALIAÇÃO - DISCIPLINA DSWL - IFSP Campinas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição:
 
-## Available Scripts
+Algumas editoras de livros no Brasil vem passando por um grande crise. Nesse contexto o editor da Companhia das Letras Luiz Schwarcz divulgou um carta fazendo um apelo para que as pessoas presenteiem as outras com livros. Um trecho da carta pode ser visto abaixo:
 
-In the project directory, you can run:
+“Presentear com livros hoje representa não só a valorização de um instrumento fundamental da sociedade para lutar por um mundo mais justo como a sobrevivência de um pequeno editor ou o emprego de um bom funcionário em uma editora de porte maior; representa uma grande ajuda à continuidade de muitas livrarias e um pequeno ato de amor a quem tanto nos deu, desde cedo: o livro.”
 
-### `yarn start`
+Crie um front end utilizando React para cadastrar livros em um banco de dados. Você deve simular um banco de dados com um vetor de objetos livros como descrito abaixo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1.  (1,0) Crie a aplicação utilizando o React. Na página inicial crie os links para as rotas descritas no item 3.
+2.  (3,0) Utilizando React Context simule um conjunto de dados com o seguintes objetos.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    ```javascript
+    {
+        id: 0,
+        name: "A liberdade é uma luta constante",
+        author: "Angela Davis",
+        pages: "144" },
+    {
+        id: 1,
+        name: "Multidão: guerra e democracia na era do império",
+        author: "Antonio Negri e Michael Hardt",
+        pages: "540" },
+    {
+        id: 2,
+        name: "A liberdade é uma luta constante",
+        author: "Angela Davis",
+        pages: "144"
+    }
+    ```
 
-### `yarn test`
+3.  (4,0) Crie as rotas e views para a manutenção dos livros.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    (a) Na rota /incluir crie um formulário que colete os seguintes dados:
 
-### `yarn build`
+        i. nome
+        ii. autor
+        iii. numpaginas
+        iv. timestamp
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    (b) Na rota /alterar exiba um campo para o usuário digitar o id do livro a ser alterado e permita a alteração de todos os dados menos o id.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    (c) Na rota /deletar exiba um campo para o usuário digitar o id do livro a ser removido.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    (d) Na rota /consultar exiba todos os livros.
 
-### `yarn eject`
+4.  (2,0) Validações:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    (a) nome do livro é obrigatório e deve conter no mínimo 5 e no máximo 50 caracteres.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    (b) Autor do livro é obrigatório e deve conter no mínimo 3 e no máximo 100 caracteres.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### ATENÇÃO !!!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+O sistema deve funcionar com o comando npm start.
