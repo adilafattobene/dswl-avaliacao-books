@@ -11,6 +11,14 @@ const Input = styled.input`
   border-radius: 3px;
 `;
 
+const Button = styled.button`
+  background: #add8e6;
+  margin: 1em;
+  padding: 0.5em;
+  border: 2px solid #add8e6;
+  border-radius: 3px;
+`;
+
 export default function IncludeForm() {
   const history = useHistory();
   const { onBookSubmit } = useContext(BooksContext);
@@ -51,7 +59,7 @@ export default function IncludeForm() {
         id="pages"
         placeholder="Digite o número de páginas"
       />
-      <input type="submit" value="Cadastrar" />
+      <Button type="submit">CADASTRAR</Button>
     </form>
   );
 }

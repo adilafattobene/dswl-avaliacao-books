@@ -11,6 +11,14 @@ const Input = styled.input`
   border-radius: 3px;
 `;
 
+const Button = styled.button`
+  background: #add8e6;
+  margin: 1em;
+  padding: 0.5em;
+  border: 2px solid #add8e6;
+  border-radius: 3px;
+`;
+
 export default function DeleteForm() {
   const history = useHistory();
   const { onBookDelete } = useContext(BooksContext);
@@ -31,7 +39,7 @@ export default function DeleteForm() {
         id="id"
         placeholder="Digite o id do livro a ser removido"
       />
-      <input type="submit" value="Remover" />
+      <Button type="submit">REMOVER</Button>
     </form>
   );
 }
