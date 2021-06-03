@@ -68,7 +68,7 @@ export default function DeleteForm() {
           <br />
           <br />
           <button onClick={() => setOpen(false)}>Cancelar</button>
-          <input type="submit" value="Cadastrar" />
+          <input type="submit" value="Alterar" />
         </form>
       )}
     </>
