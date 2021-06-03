@@ -9,22 +9,26 @@ const BooksProvider = (props) => {
       name: "A liberdade é uma luta constante",
       author: "Angela Davis",
       pages: "144",
+      timestamp: Date(),
     },
     {
       id: 1,
       name: "Multidão: guerra e democracia na era do império",
       author: "Antonio Negri e Michael Hardt",
       pages: "540",
+      timestamp: Date(),
     },
     {
       id: 2,
       name: "A liberdade é uma luta constante",
       author: "Angela Davis",
       pages: "144",
+      timestamp: Date(),
     },
   ]);
 
   console.log("[BooksProvider]");
+  console.log(books);
 
   const onBookSubmit = (book) => {
     let newBooks = [
@@ -34,6 +38,7 @@ const BooksProvider = (props) => {
         name: book.name,
         author: book.author,
         pages: book.pages,
+        timestamp: Date(),
       },
     ];
     setBooks(newBooks);
@@ -62,6 +67,7 @@ const BooksProvider = (props) => {
       name: book.name,
       author: book.author,
       pages: book.pages,
+      timestamp: Date(),
     };
 
     setBooks(newBooks);
