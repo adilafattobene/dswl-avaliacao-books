@@ -14,14 +14,20 @@ export default function IncludeForm() {
       author: event.target.author.value,
       pages: event.target.pages.value,
     });
-    
+
     //redirect
     history.push("/consultar");
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" id="name" placeholder="Digite o nome do livro" />
+      <input
+        type="text"
+        id="name"
+        placeholder="Digite o nome do livro"
+        minlength="5"
+        maxlength="50"
+      />
       <input
         type="text"
         id="author"

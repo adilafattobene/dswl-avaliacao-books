@@ -48,7 +48,14 @@ export default function DeleteForm() {
       {open && (
         <form onSubmit={handleChangeSubmit}>
           <label for="name">Nome: </label>
-          <input type="text" id="name" name="name" defaultValue={book.name} />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            defaultValue={book.name}
+            minlength="5"
+            maxlength="50"
+          />
           <br />
           <label for="name">Autor: </label>
           <input
