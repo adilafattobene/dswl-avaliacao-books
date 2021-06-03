@@ -27,6 +27,7 @@ export default function IncludeForm() {
         placeholder="Digite o nome do livro"
         minlength="5"
         maxlength="50"
+        required
       />
       <input
         type="text"
@@ -34,8 +35,13 @@ export default function IncludeForm() {
         placeholder="Digite o nome da(o) autora(o)"
         minlength="3"
         maxlength="100"
+        required
       />
-      <input type="number" id="pages" placeholder="Digite o número de páginas" />
+      <input
+        type="number"
+        id="pages"
+        placeholder="Digite o número de páginas"
+      />
       <input type="submit" value="Cadastrar" />
     </form>
   );

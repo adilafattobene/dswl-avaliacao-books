@@ -55,6 +55,7 @@ export default function DeleteForm() {
             defaultValue={book.name}
             minlength="5"
             maxlength="50"
+            required
           />
           <br />
           <label for="name">Autor: </label>
@@ -65,6 +66,7 @@ export default function DeleteForm() {
             defaultValue={book.author}
             minlength="3"
             maxlength="100"
+            required
           />
           <br />
           <label for="name">Páginas: </label>
