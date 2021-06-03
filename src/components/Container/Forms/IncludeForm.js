@@ -1,6 +1,15 @@
 import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { BooksContext } from "../../../context/BooksProvider";
+import styled from "styled-components";
+
+const Input = styled.input`
+  padding: 0.5em;
+  margin: 0.5em;
+  color: "palevioletred";
+  background: aliceblue;
+  border-radius: 3px;
+`;
 
 export default function IncludeForm() {
   const history = useHistory();
@@ -21,7 +30,7 @@ export default function IncludeForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
+      <Input
         type="text"
         id="name"
         placeholder="Digite o nome do livro"
@@ -29,7 +38,7 @@ export default function IncludeForm() {
         maxlength="50"
         required
       />
-      <input
+      <Input
         type="text"
         id="author"
         placeholder="Digite o nome da(o) autora(o)"
@@ -37,7 +46,7 @@ export default function IncludeForm() {
         maxlength="100"
         required
       />
-      <input
+      <Input
         type="number"
         id="pages"
         placeholder="Digite o número de páginas"
