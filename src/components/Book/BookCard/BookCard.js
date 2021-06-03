@@ -15,6 +15,9 @@ export default function BookCardComponent(props) {
   return (
     <BookCard>
       <div>
+        <p>ID: {props.id}</p>
+      </div>
+      <div>
         <p>{props.name}</p>
         <p>{props.author}</p>
         <p>{props.pages}</p>
