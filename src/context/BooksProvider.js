@@ -39,11 +39,19 @@ const BooksProvider = (props) => {
     setBooks(newBooks);
   };
 
+  const onBookDelete = (id) => {
+    let newBooks = books.slice();
+
+    newBooks.splice(id, 1);
+    setBooks(newBooks);
+  };
+
   return (
     <BooksContext.Provider
       value={{
         books,
         onBookSubmit,
+        onBookDelete,
       }}
     >
       {props.children}

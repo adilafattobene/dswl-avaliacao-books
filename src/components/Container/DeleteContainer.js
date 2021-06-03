@@ -1,5 +1,13 @@
 import React from "react";
+import DeleteForm from "./Forms/DeleteForm";
+import RootContainer from "../Container/RootContainer";
 
 export default function DeleteContainer() {
-    return <p>deletar</p>;
+  return (
+    <RootContainer>
+      <br />
+      <br />
+      <DeleteForm />
+    </RootContainer>
+  );
 }
